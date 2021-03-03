@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+:root{
+    --borgona-color:hsl(300, 43%, 22%);
+    --magenta-color:hsl(333, 80%, 67%);
+    --grisRosa-color:hsl(303, 10%, 53%);
+    --paloRosa-color: hsl(300, 24%, 96%);
+}
+p{
+    font-size: 12px;
+}
+
+/*/Fondo/*/
+.bgTop{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 40%;
+}
+.bgBottom{
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 60%;
+    padding-bottom: 3px;
+}
+
+@media (max-width: 992px){
+    .bgTop{
+        background-size: 90%;
+    }
+    .bgBottom{
+        background-size: 80%;
+    }
+}
+
+/*/Estilos Titular/*/
+h1{
+    color: var(--borgona-color);
+    font-weight: 700;
+    line-height: 1.1;
+}
+.textMain{
+    color: var(--grisRosa-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rank{
+    background-color: var(--paloRosa-color);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--borgona-color);
+    font-weight: 700;
+}
+.stars{
+    margin-right: 5px;
+}
+
+@media (min-width: 993px){
+    .box2{
+        margin-left: 9%;
+    }
+    .box3{
+        margin-left: 17%;
+    }
+}
+
+@media (max-width: 992px){
+    h1{
+        text-align: center;
+    }
+    .textMain{
+       text-align: center;
+       margin: 20px 0;
+   }
+}
+
+/*/Estilos cajas Usuarios/*/
+.cajaUser{
+    background-color: var(--borgona-color);
+    border-radius: 5px;
+}
+.userName{
+    font-weight: 700;
+}
+.buyer{
+    color: var(--magenta-color);
+}
+
+@media (min-width: 993px){
+   .user2{
+       margin-top: 20px!important;
+   }
+   .user3{
+    margin-top: 30px!important;
+    }
+}
